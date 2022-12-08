@@ -1,19 +1,18 @@
 
   function hasTargetSum(arr, target) {
-    // loop through all numbers in the array
+   
     for (let i = 0; i < arr.length; i++) {
-      // loop through all other numbers in the array
+      
       for (let j = 0; j < arr.length; j++) {
-        // check if the current pair of numbers adds up to the target number
+        
         if (i !== j && arr[i] + arr[j] === target) {
-          // if so, return true
+        
           return true;
         }
       }
     }
   
-    // if we reach this point, it means that no pair of numbers in the array adds up to the target number
-    // so we return false
+    
     return false;
   }
   
@@ -27,7 +26,12 @@ any two added array numbers === target
 */
 
 /*
-  Add written explanation of your solution here
+loop through all numbers in the array
+loop through all other numbers in the array
+check if the current pair of numbers adds up to the target number
+if so, return true
+if we reach this point, it means that no pair of numbers in the array adds up to the target number
+so we return false
 */
 
 // You can run `node index.js` to view these console logs
