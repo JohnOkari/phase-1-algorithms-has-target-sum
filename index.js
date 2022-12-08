@@ -1,13 +1,29 @@
-function hasTargetSum(array, target) {
-  // Write your algorithm here
-}
+
+  function hasTargetSum(arr, target) {
+    // loop through all numbers in the array
+    for (let i = 0; i < arr.length; i++) {
+      // loop through all other numbers in the array
+      for (let j = 0; j < arr.length; j++) {
+        // check if the current pair of numbers adds up to the target number
+        if (i !== j && arr[i] + arr[j] === target) {
+          // if so, return true
+          return true;
+        }
+      }
+    }
+  
+    // if we reach this point, it means that no pair of numbers in the array adds up to the target number
+    // so we return false
+    return false;
+  }
+  
 
 /* 
-  Write the Big O time complexity of your function here
+   O(n^2)
 */
 
-/* 
-  Add your pseudocode here
+/*
+any two added array numbers === target 
 */
 
 /*
